@@ -2,7 +2,7 @@ var express = require('express')
   , routes = require('./routes')
   , http = require('http')
   , path = require('path')
-  , elophant = 'p57T78ZVVS2mLWhndgeh'
+  , elophant = ''
 
 var app = express();
 
