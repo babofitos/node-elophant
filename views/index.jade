@@ -1,0 +1,49 @@
+extends layout
+
+block content
+  div.container
+    h1= title
+    div.alert.alert-error.visibility Summoner doesn't exist or is not in a game
+      button.close(type="button", data-dismiss="alert") &times;
+    div.center#search-div
+      div#input-div
+        input#search-input(type='text', placeholder='Summoner')
+        select
+          option(value='in_progress_game_info') Get Game In Progress Info
+      button.btn.btn-success.btn-large#search-btn(type='button') Search!
+      table.table.table-striped.visibility#game-progress-table
+        thead
+          tr
+            th(colspan='2') Team 1
+            th(colspan='2') Team 2
+        tbody
+          tr
+            th Name
+            th Solo Elo
+            th Name
+            th Solo Elo
+          tr
+            td#team-1-summoner-1
+            td#team-1-summoner-1-elo
+            td#team-2-summoner-1
+            td#team-2-summoner-1-elo
+          tr
+            td#team-1-summoner-2
+            td#team-1-summoner-2-elo
+            td#team-2-summoner-2
+            td#team-2-summoner-2-elo
+          tr
+            td#team-1-summoner-3
+            td#team-1-summoner-3-elo
+            td#team-2-summoner-3
+            td#team-2-summoner-3-elo
+          tr
+            td#team-1-summoner-4
+            td#team-1-summoner-4-elo
+            td#team-2-summoner-4
+            td#team-2-summoner-4-elo
+          tr
+            td#team-1-summoner-5
+            td#team-1-summoner-5-elo
+            td#team-2-summoner-5
+            td#team-2-summoner-5-elo
