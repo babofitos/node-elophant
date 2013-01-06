@@ -4,7 +4,7 @@ $(function() {
     , resource = $('#input-div select option:selected').val()
 
   search.click(function() {
-    var summoner = $('#search-input').val()
+    var summoner = encodeURI($('#search-input').val())
       , data = {
           resource: resource
         , summonerName: summoner
